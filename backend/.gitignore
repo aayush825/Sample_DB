@@ -50,7 +50,7 @@ coverage.xml
 *.mo
 *.pot
 
-# Environments
+# Environments - Keep .env.example but ignore .env
 .env
 .venv
 env/
@@ -73,3 +73,12 @@ Thumbs.db
 # Project specific
 *.log
 logs/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+*.tmp
+*.temp

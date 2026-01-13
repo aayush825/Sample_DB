@@ -3,6 +3,7 @@
 A FastAPI-based REST API for fetching top cost optimization recommendations for cloud platforms (AWS, Databricks, Snowflakes, Google Cloud).
 
 ## 📋 Table of Contents
+
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
@@ -68,6 +69,7 @@ backend/
 ## 🚀 Setup Instructions
 
 ### Prerequisites
+
 - Python 3.9 or higher
 - PostgreSQL 12+ (for production)
 - Git
@@ -75,28 +77,32 @@ backend/
 ### Quick Start (Mock Mode - No Database Required)
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/aayush825/Sample_DB.git
    cd Sample_DB/backend
    ```
 
 2. **Create virtual environment**
+
    ```bash
    python -m venv venv
-   
+
    # Windows
    venv\Scripts\activate
-   
+
    # Linux/Mac
    source venv/bin/activate
    ```
 
 3. **Install dependencies**
+
    ```bash
    pip install -r requirements.txt
    ```
 
 4. **Run mock server (no database needed)**
+
    ```bash
    python main_mock.py
    ```
@@ -109,15 +115,18 @@ backend/
 ### Production Setup (With PostgreSQL)
 
 1. **Install PostgreSQL**
+
    - Download from: https://www.postgresql.org/download/
 
 2. **Create database and tables**
+
    ```bash
    psql -U postgres
    \i database_setup.sql
    ```
 
 3. **Configure environment**
+
    ```bash
    cp .env.example .env
    # Edit .env with your database credentials
@@ -145,6 +154,7 @@ Get top 6 recommendations based on potential cost savings.
 ```
 
 **Available platform values:**
+
 - `all_platform` - All platforms
 - `aws` - AWS only
 - `databricks` - Databricks only
@@ -220,7 +230,7 @@ print(response.json())
 3. Headers: `Content-Type: application/json`
 4. Body (raw JSON):
    ```json
-   {"platform": "aws"}
+   { "platform": "aws" }
    ```
 
 ## 🔧 Environment Variables
@@ -294,6 +304,7 @@ This project is licensed under the MIT License.
 ## 👥 Author
 
 **Aayush**
+
 - GitHub: [@aayush825](https://github.com/aayush825)
 
 ## 🙏 Acknowledgments
